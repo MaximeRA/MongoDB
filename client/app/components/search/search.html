@@ -1,0 +1,41 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li><a href="/">Accueil</a></li>
+                <li>Recherche</li>
+                <li class="active">"{{queryString}}"</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div ng-repeat="item in items track by $index">
+                <div class="row" >
+                    <div class="col-md-7">
+                        <a href="/item/{{item._id}}"></a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3><a href="/item/{{item._id}}">{{item.title}}</a></h3>
+                        <h4>{{item.marque}}</h4>
+                        <p>{{item.description}}</p>
+                        <a class="btn btn-primary" href="/item/{{item._id}}">View Product <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+
+            <div style="text-align:center;">
+                <i>{{items.length}} Produits dans la recherche </i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
