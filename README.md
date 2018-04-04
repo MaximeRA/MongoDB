@@ -1,5 +1,7 @@
 Abdelouahed Maxime
 
+git clone https://github.com/MaximeRA/MongoDB
+
 ```bash
 Use maxproject
 
@@ -26,7 +28,6 @@ db.item.insert({ _id: 10, title: "Fortis Series DDR4 32Go", marque: "G.Skill", c
 npm install
 ```
 
-Run the application with this command:
 ```bash
 npm start
 ```
